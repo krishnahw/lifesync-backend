@@ -11,7 +11,7 @@ This is the backend for the LifeSync application. It handles user registration, 
 - Cloudinary for image uploads
 - JWT + bcrypt for authentication
 
-## 📁 Project Structure
+
 
 
 ## 🚀 How to Run Locally
