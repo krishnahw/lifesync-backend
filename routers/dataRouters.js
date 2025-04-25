@@ -15,6 +15,6 @@ router.get("/userData", verifyToken, getUserData);
 
 router.post("/register", registerUser);
 
-router.get('/login', login);
+router.post('/login', login);
 
 export default router;
