@@ -45,11 +45,11 @@ export const getUserData = (req, res) => {
 
   if (selectedDate) {
     query =
-      "SELECT * FROM memories WHERE user_id = ? AND DATE(createdAt) = ? ORDER BY createdAt DESC";
+      "SELECT * FROM information WHERE user_id = ? AND DATE(createdAt) = ? ORDER BY createdAt DESC";
     values = [userId, selectedDate];
   } else {
     query =
-      "SELECT * FROM memories WHERE user_id = ? ORDER BY createdAt DESC LIMIT 10";
+      "SELECT * FROM information WHERE user_id = ? ORDER BY createdAt DESC LIMIT 10";
     values = [userId];
   }
 
